@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form / Working</title>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false">
+        <h1>
+            Contact Us
+        </h1>
+        <input type="name" id="name" placeholder="Name..." required><br>
+        <input type="email" id="email" placeholder="Email..." required><br>
+        <input type="phone" id="phone" placeholder="Phone-No..." required><br>
+        <textarea id="text" placeholder="How Can We Help You..."></textarea>
+        <button type="submit" id="btn">Send</button>
+        </form>
+    </div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
